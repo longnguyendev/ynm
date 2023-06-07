@@ -1,0 +1,84 @@
+body {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: #313131;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  background-color: white;
+  padding: 1rem 1.2rem;
+  box-shadow: 0.4px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  text-shadow: 0.4px 4px 5px rgba(0, 0, 0, 0.2);
+  padding: 70px;
+}
+.input-group {
+  margin: 2rem 0;
+  position: relative;
+}
+.input-radio {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.input-group h2 {
+  text-align: center;
+  font-weight: 400;
+  user-select: none;
+}
+.input-group input {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid dodgerblue;
+  outline: none;
+  padding: 6px 4px;
+}
+.input-group label {
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-weight: 300;
+  font-size: 15px;
+  pointer-events: none;
+  color: gray;
+  transition: 200ms ease;
+}
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -14px;
+  left: -2px;
+  font-size: 13.5px;
+  color: dodgerblue;
+}
+form button {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 0.5rem 1rem;
+  color: floralwhite;
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 200ms;
+  box-shadow: 0.2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+form p {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+form p a {
+  color: black;
+  font-weight: 500;
+}
+.valid-feedback,
+.invalid-feedback {
+  width: 0;
+}
